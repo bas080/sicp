@@ -58,8 +58,8 @@ module.exports = {
   ),
 
   divide: apply(
-    (a, b) => divide(numer(a), numer(b)),
-    (a, b) => divide(denom(a), denom(b))
+    (a, b) => multiply(numer(a), denom(b)),
+    (a, b) => multiply(denom(a), numer(b))
   ),
 
   // sum and subtract have common procedures

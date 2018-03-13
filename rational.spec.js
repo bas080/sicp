@@ -7,7 +7,15 @@ assert(equals(
     makeRatio(1,2),
     makeRatio(1,4),
   ),
-  makeRatio(1,2)
+  makeRatio(2,1)
+))
+
+assert(equals(
+  divide(
+    makeRatio(2, 1),
+    makeRatio(1, 3)
+  ),
+  makeRatio(6, 1)
 ))
 
 assert(equals(makeRatio(2, 4), makeRatio(1,2)))
